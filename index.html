@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="https://aravarun.xyz">
+      <img src="arav-codes.png" alt="Arav Codes Logo" class="logo" />
+    </a>
+    <div class="controls">
+      <button onclick="changeBackground(1)">Background 1</button>
+      <button onclick="changeBackground(2)">Background 2</button>
+      <button onclick="changeBackground(3)">Background 3</button>
+    </div>
+
+    <div class="bmi-container">
+      <h2>Body Mass Index Calculator</h2>
+      <input type="text" id="weight" placeholder="Enter weight (kg)" />
+      <input type="text" id="height" placeholder="Enter height (cm)" />
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <div class="result" id="result"></div>
+      <div class="error" id="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

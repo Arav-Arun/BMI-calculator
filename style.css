@@ -1,0 +1,93 @@
+/* Default background */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.5s ease-in-out;
+  background: url("bg1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Transparent iOS-style card */
+.bmi-container {
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h2 {
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff; /* now text inside the input is white */
+  font-weight: bold;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+}
+
+/* Buttons */
+button {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Background toggle buttons */
+.controls {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
