@@ -7,9 +7,8 @@ function calculateBMI() {
   result.textContent = "";
   error.textContent = "";
 
-  // Validate input
   if (!weight || !height) {
-    error.textContent = "⚠️ Please enter both weight and height.";
+    error.textContent = "Please enter weight and height.";
     return;
   }
 
@@ -18,10 +17,9 @@ function calculateBMI() {
 
   if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 20) {
     error.textContent =
-      "⚠️ Enter valid positive numbers for weight and height.";
+      "Enter valid positive numbers for weight and height.";
     return;
   }
-  // Convert height to meters
   height = height / 100;
 
   let bmi = weight / (height * height);
@@ -36,7 +34,6 @@ function calculateBMI() {
   result.textContent = `Your BMI is ${bmi} (${category})`;
 }
 
-/* Function to change background */
 function changeBackground(option) {
   let body = document.body;
   if (option === 1) {
